@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_ct"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.example.whatever.CT">
+
+<Button
+    android:id="@+id/btnGoCalendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Go To Calendar"
+    ></Button>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Date"
+    android:id="@+id/dt"
+    android:layout_below="@+id/btnGoCalendar"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:textSize="25sp"/>
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@id/dt"
+    android:layout_marginTop="100dp"
+    android:text="Go To Time Picker"></Button>
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnGoCalendar"
+    android:layout_alignTop="@id/button"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp"
+    android:hint="Time"
+    android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="450dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="100dp"
+        android:onClick="proceed"
+        android:text="PROCEED" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Voice"
+    android:background="@color/white"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="590dp"
+        android:clickable="true"
+
+        app:backgroundTint="#03A9F4"
+        app:srcCompat="@drawable/ic_mic_black_24dp" />
+    <pl.droidsonroids.gif.GifImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/g"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+    />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#A303A9F4"
+        android:onClick="next"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="500dp"
+        android:text="Ask me a question by clicking on the mic."
+        android:textColor="#00020E"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>

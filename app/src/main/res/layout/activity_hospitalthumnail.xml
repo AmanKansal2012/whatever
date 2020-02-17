@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hospitalthumnail">
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:lottie_loop="true"
+        app:lottie_fileName="hospital.json"
+        app:lottie_autoPlay="true"
+        android:id="@+id/hospital_animation"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hospital_txt"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="welcome_to_the_app_the_following_instructions_should_be_followed"
+        android:textSize="20sp"
+        android:layout_below="@+id/hospital_animation"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next"
+        android:id="@+id/hospital_button"
+        android:background="#ff9999"
+        />
+
+
+
+
+</RelativeLayout>

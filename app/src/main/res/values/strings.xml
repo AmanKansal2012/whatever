@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Appointx</string>
+    <string name="title_activity_my_voice">MyVoice</string>
+    <string name="title_activity_voice">Voice</string>
+</resources>
