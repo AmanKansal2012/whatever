@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".Emergencyap"
+    android:background="@drawable/gradall">
+
+    <TextView
+        android:id="@+id/fillkind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="70dp"
+        android:background="#010048"
+        android:fontFamily="monospace"
+        android:paddingLeft="20dp"
+        android:text="Name of patient"
+        android:textColor="#FCFBFB"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fillkind"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginRight="40dp"
+        android:capitalize="words"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Name of Patient."
+        android:shadowDx="20"
+        android:singleLine="true"
+        android:textColorHint="#6b5acd"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/fillno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/names"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="55dp"
+        android:background="#010048"
+        android:fontFamily="monospace"
+        android:gravity="left"
+        android:hapticFeedbackEnabled="false"
+        android:paddingLeft="20dp"
+        android:text="Contact Number:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#6b5acd"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fillno"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Contact no."
+        android:paddingRight="20dp"
+        android:textColorHint="#6b5acd"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/submitButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/number"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:clickable="true"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        android:includeFontPadding="true"
+
+        android:scrollbars="vertical"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#1F1C1C"
+        android:shadowDy="20"
+        android:text="EMERGENCY"
+        android:textColor="@color/white"
+        app:sub_btn_background="@color/skyBlue"
+        app:sub_btn_duration="1500"
+        app:sub_btn_line_color="#000000"
+        app:sub_btn_ripple_color="@color/colorAccent"
+        app:sub_btn_tick_color="@color/white">
+
+    </com.spark.submitbutton.SubmitButton>
+
+</RelativeLayout>

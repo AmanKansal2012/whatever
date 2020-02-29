@@ -30,7 +30,7 @@ public class dp extends AppCompatActivity {
         setContentView(R.layout.activity_dp);
         recyclerView=findViewById(R.id.rv);
         searchView=findViewById(R.id.searchView);
-        ref= FirebaseDatabase.getInstance().getReference().child("Users").child("Doctorspro");
+        ref= FirebaseDatabase.getInstance().getReference().child("DoctorsRegister");
     }
     @Override
     protected void onStart() {

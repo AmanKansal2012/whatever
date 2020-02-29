@@ -24,6 +24,7 @@ import android.text.format.DateUtils;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
@@ -37,10 +38,12 @@ public class Voice extends AppCompatActivity {
     private TextToSpeech myTTS;
     private SpeechRecognizer mySpeechRecognizer;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voice);
+
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -77,6 +80,23 @@ public class Voice extends AppCompatActivity {
         });
         initializeTextToSpeech();
         initializeSpeechRecognizer();
+
+
+
+    }
+    private void initializeTextToSpeech() {
+        myTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (myTTS.getEngines().size() == 0) {
+                    Toast.makeText(Voice.this, "There is no TTS engine on your device", Toast.LENGTH_LONG).show();
+                    finish();
+                } else {
+                    myTTS.setLanguage(Locale.US);
+                    speak( "hello,i am fityfy,i will tell you about this application name health o. this is java based android healthcare application, It enables user to keep track of their health and wellness.fitroid has many modules such as nearby doctors,hospitals,s o s,book appointment section,body mass index calculator,step tracker,blood bank ,payment gateway, enquiry system.overall its a complete package for health wellness    .  Browse this application for more information. have a great day ahead.");
+                }
+            }
+        });
     }
 
     private void initializeSpeechRecognizer() {
@@ -140,67 +160,72 @@ public class Voice extends AppCompatActivity {
         //what is your name?
         //what is the time?
         //open the browser
-        if (command.indexOf("Heyy") != -1) {
-            speak("Namaste ,i think you are from a country with rich heritage and culture that is india");
+        if(command.indexOf("hello")!=-1){
+            speak("how can i help you?");
         }else
-        if (command.indexOf("what is your name") != -1) {
-            speak("My name is usher.");
-        }else
-        if (command.indexOf("time") != -1) {
-            Date now = new Date();
-            String time = DateUtils.formatDateTime(this, now.getTime(), DateUtils.FORMAT_SHOW_TIME);
-            speak("The time now is " + time);
+        if (command.indexOf("what is") != -1) {
+            if(command.indexOf("your name")!=-1)
+            {
+                speak("My name is fityfy");
+            }
+            }
+             else if (command.indexOf("go to") != -1) {
 
-        } else if (command.indexOf("open") != -1) {
-            if (command.indexOf("browser") != -1) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.google.co.in/?hl=hi"));
-                startActivity(intent);
-            } else if (command.indexOf("instagram") != -1) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.instagram.com/"));
+                if(command.indexOf("dashboard")!=-1){
+             Intent intent = new Intent(Voice.this,dashboard.class);
                 startActivity(intent);
             }
-        } else if (command.indexOf("how") != -1) {
+                else if(command.indexOf("doctor")!=-1){
+                    Intent intent = new Intent(Voice.this,dp.class);
+                    startActivity(intent);
+                }
+                else if(command.indexOf("appointment")!=-1){
+                    Intent intent = new Intent(Voice.this,dp.class);
+                    startActivity(intent);
+                }
+                else if(command.indexOf("blood")!=-1){
+                    Intent intent = new Intent(Voice.this,blood.class);
+                    startActivity(intent);
+                }
+                else if(command.indexOf("bmi")!=-1){
+                    Intent intent = new Intent(Voice.this,bmi.class);
+                    startActivity(intent);
+                }
+                else if(command.indexOf("step")!=-1){
+                    Intent intent = new Intent(Voice.this,step.class);
+                    startActivity(intent);
+                }else if(command.indexOf("sos")!=-1) {
+                    Intent intent = new Intent(Voice.this, ambulance.class);
+                    startActivity(intent);
+                }
+                else speak("Sorry did not get what you said !");
+
+
+            }
+         else if (command.indexOf("how") != -1) {
             if (command.indexOf("many") != -1) {
                 if (command.indexOf("hospitals") != -1) {
-                    speak("There are around 100 hospitals near delhi and ghaziabad which are integrated in this application.");
+                    speak("There are around 50 hospitals  integrated in this application.");
                 } else if (command.indexOf("beds") != -1) {
-                    speak("There are around 600 to 800 beds in every hospitals near delhi and ghaziabad which are integrated in this application.");
+                    speak("There are around 100 to 200 beds in every hospital integrated in this application.");
                 }
             }
         } else if (command.indexOf("about") != -1) {
-            if (command.indexOf("method") != -1) {
+            if (command.indexOf("method of") != -1) {
                 if (command.indexOf("payment") != -1) {
-                    speak("You can pay through U P I with any application installed on your device such as paytm,google pay,phone pay,amazon pay! or if you dont want to pay now you will loose a discount of 20 percent using pay later option. You can also pay later through hospital desk.");
+                    speak("You can pay through U P I with any application installed on your device such as paytm,google pay,phone pay,amazon pay! or if you dont want to pay now you will loose a discount of 10 percent using pay now option. You can also pay later through hospital desk.");
                 } else if (command.indexOf("blood") != -1) {
                     speak("in blood bank module you can donate blood yourself by filling the required form or if you need blood you can go to need blood section and search for required donor and contact him or her.");
                 }
+                else speak("Sorry did not get what you said !");
             }
-        }else if(command.indexOf("who")!=-1){
-            if(command.indexOf("developed")!=-1){
-                speak("This application has been developed by team hexdroide and i have been developed and designed by the most talented person that is AAman Kaansal");
-            }
+            else speak("Sorry did not get what you said !");
         }
-        else
-        {
-            speak("Sorry did not get what you said");
-        }
+        else speak("Sorry did not get what you said !");
+
     }
-    private void initializeTextToSpeech() {
-        myTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (myTTS.getEngines().size() == 0) {
-                    Toast.makeText(Voice.this, "There is no TTS engine on your device", Toast.LENGTH_LONG).show();
-                    finish();
-                } else {
-                    myTTS.setLanguage(Locale.US);
-                    speak("Hello I am Usher,I will tell you about this application named Appoint X.This is an java based application which helps you book appointments with the doctors O P D of the hospital near you.This application has many modules such as hospitals search near you,book appointments,types of facilities in hospitals,blood bank modules,payment gateway and query and feedback section where you can message your query.It is an allrounder application where you can do everthing under one roof.If you want to enter this application click the start button.");
-                }
-            }
-        });
-    }
+
+
 
     private void speak(String hello_i_am_ready) {
         if (Build.VERSION.SDK_INT >= 21) {

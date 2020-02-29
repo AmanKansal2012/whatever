@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".confirm">
+    tools:context=".confirm"
+    android:background="@drawable/gradall">
 
     <EditText
-        android:id="@+id/drname"
+        android:id="@+id/pname"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="9dp"
         android:ems="10"
-        android:hint="Doctor Name"
+        android:hint="Patient name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/yourname"
+        app:layout_constraintBottom_toTopOf="@+id/pid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -27,29 +28,30 @@
         android:layout_height="100dp"
         android:layout_marginStart="55dp"
         android:layout_marginEnd="56dp"
-        android:text="**To confirm appointment type the Doctor name you have selected and patient name below!"
+        android:text="**To confirm appointment type the Patient name below!"
         android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/drname"
+        app:layout_constraintBottom_toTopOf="@+id/pname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/yourname"
+        android:id="@+id/pid"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="9dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:ems="10"
-        android:hint="Patient Name"
-        android:inputType="textPersonName"
+
+        android:text="PayLater"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/Confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/drname" />
+        app:layout_constraintTop_toBottomOf="@+id/pname" />
 
     <TextView
         android:id="@+id/textView6"
@@ -60,8 +62,8 @@
         android:layout_marginEnd="125dp"
         android:layout_marginBottom="24dp"
         android:text="Confirm Your Booking!!"
-        android:textColor="#850101"
-        android:textSize="18sp"
+        android:textColor="#C8020861"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,11 +78,12 @@
         android:layout_marginStart="146dp"
         android:layout_marginEnd="177dp"
         android:layout_marginBottom="165dp"
-        android:onClick="confirm"
+        android:background="@drawable/rounded_butonn"
+
         android:text="CONFIRM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourname" />
+        app:layout_constraintTop_toBottomOf="@+id/pid" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

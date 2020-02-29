@@ -1,24 +1,24 @@
 package com.example.whatever;
 
 
-
-        import android.content.Intent;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.RelativeLayout;
-        import android.widget.TextView;
-
-
-        import androidx.annotation.NonNull;
-        import androidx.recyclerview.widget.RecyclerView;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 
-        import java.util.ArrayList;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class Adapterclass  extends RecyclerView.Adapter<Adapterclass.MyViewHolder>{
+
+import java.util.ArrayList;
+
+public class Adapterclass extends RecyclerView.Adapter<Adapterclass.MyViewHolder> {
 
     ArrayList<Users> list;
+
     public Adapterclass(ArrayList<Users> list) {
         this.list = list;
 
@@ -33,15 +33,17 @@ public class Adapterclass  extends RecyclerView.Adapter<Adapterclass.MyViewHolde
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Adapterclass.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final Adapterclass.MyViewHolder holder, final int position) {
         MyViewHolder.name.setText(list.get(position).getName());
-        MyViewHolder.desc.setText(list.get(position).getStatus());
+        MyViewHolder.desc.setText(list.get(position).getDomain());
         holder.relate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                Intent intent=new Intent(v.getContext(),doctorProfileopen.class);
+                Intent intent = new Intent(v.getContext(), doctorProfileopen.class);
+                intent.putExtra("name",list.get(holder.getAdapterPosition()).getName());
+                intent.putExtra("desc",list.get(holder.getAdapterPosition()).getDomain());
 
 
                 v.getContext().startActivity(intent);
@@ -53,8 +55,8 @@ public class Adapterclass  extends RecyclerView.Adapter<Adapterclass.MyViewHolde
 
     @Override
     public int getItemCount() {
-        return list.size();    }
-
+        return list.size();
+    }
 
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
@@ -68,18 +70,11 @@ public class Adapterclass  extends RecyclerView.Adapter<Adapterclass.MyViewHolde
             super(itemView);
             name = itemView.findViewById(R.id.name);
             desc = itemView.findViewById(R.id.description);
-            relate=itemView.findViewById(R.id.doctor_view);
-
-
-
+            relate = itemView.findViewById(R.id.doctor_view);
 
 
         }
     }
-
-
-
-
 
 
 }

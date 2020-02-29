@@ -32,4 +32,9 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
     }
+
+    public void sos(View view) {
+        Intent intent=new Intent(Main2Activity.this,ambulance.class);
+        startActivity(intent);
+    }
 }

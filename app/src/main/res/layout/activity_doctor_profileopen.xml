@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/gradall"
 
 
     tools:context=".doctorProfileopen">
@@ -15,7 +15,7 @@
         android:layout_height="120dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-        android:background="@drawable/mine"
+        android:background="@drawable/doc"
         android:transitionName="imageTransition" />
 
 
@@ -26,7 +26,7 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="210dp"
         android:layout_marginRight="6dp"
-        app:cardBackgroundColor="@android:color/white"
+        app:cardBackgroundColor="@color/skyBlue"
         app:cardCornerRadius="12dp"
         app:cardElevation="5dp">
 
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-
+android:id="@+id/gotname"
                 android:text="Ansh Sinha"
                 android:textColor="@android:color/black"
                 android:textSize="25dp"
@@ -52,7 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="35dp"
-                android:text="An Android Developer"
+                android:text="A Physician"
+                android:id="@+id/gotdesc"
                 android:textSize="22sp"
 
                 android:transitionName="descTransition" />
@@ -84,8 +85,9 @@
             android:layout_alignParentRight="true"
             android:layout_marginLeft="18dp"
             android:layout_marginTop="66dp"
-            android:text="Persuing B.Tech From KIET Group Of Institutions"
-            android:textSize="22sp" />
+            android:text="A MBBS doctor studied from AIIMS, New Delhi"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -102,7 +104,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="175dp"
             android:text="Kanpur,Uttar Pradesh"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
 
         <Button
@@ -112,7 +115,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/rounded_button"
+            android:background="@drawable/rounded_butonn"
             android:onClick="book"
             android:text="Book Appointment"
             android:textColor="@android:color/black" />

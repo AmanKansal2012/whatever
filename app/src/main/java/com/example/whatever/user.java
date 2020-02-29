@@ -8,6 +8,6 @@ public class user {
         this.email = email;
     }
 
-    public user() {
+    public user(String username, String email, String uid) {
     }
 }

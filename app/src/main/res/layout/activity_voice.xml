@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Voice"
-    android:background="@color/white"
+    android:background="#f1f1f1"
+
     >
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -19,11 +20,11 @@
         app:backgroundTint="#03A9F4"
         app:srcCompat="@drawable/ic_mic_black_24dp" />
     <pl.droidsonroids.gif.GifImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
 
-    android:background="@drawable/g"
-        android:layout_marginLeft="20dp"
+    android:background="@drawable/desk"
+
         android:layout_marginTop="200dp"
     />
 
@@ -33,19 +34,20 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="280dp"
         android:layout_marginTop="5dp"
-        android:backgroundTint="#A303A9F4"
+        android:backgroundTint="#03A9F4"
         android:onClick="next"
-        android:text="Start" />
+        android:text="Skip" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="500dp"
-        android:text="Ask me a question by clicking on the mic."
+        android:layout_marginTop="100dp"
+        android:text="Ask me a question by tapping on the mic."
         android:textColor="#00020E"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

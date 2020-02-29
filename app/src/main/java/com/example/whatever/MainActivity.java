@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     ImageView splashscreen;
-    FirebaseAuth mAuth;
+
 
 
 

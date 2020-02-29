@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    android:background="@android:color/white"
+    android:background="@drawable/whitee"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
 
@@ -20,14 +20,15 @@
         android:layout_alignParentLeft="true"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:text="Welcome,"
-        android:textColor="#5D9EEA"
+        android:textColor="#2672EA"
 
         android:textSize="35sp"
         android:textStyle="italic"
 
         android:typeface="sans" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
         android:layout_marginLeft="20dp"
 
         android:text="back"
+        android:textColor="#2672EA"
 
         android:textSize="32sp"
         android:textStyle="italic" />
@@ -48,7 +50,7 @@
         android:focusable="true"
         android:layout_marginTop="80dp"
 
-        android:textColorHint="#ff8080">
+        android:textColorHint="@color/skyBlue">
 
         <EditText
             android:id="@+id/editText_email"
@@ -57,6 +59,8 @@
             android:ems="10"
             android:hint="Email"
             android:text="amankansal2012@gmail.com"
+            android:textColor="@android:color/black"
+
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,15 +69,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:focusable="true"
-        android:textColorHint="#ff8080">
+        android:textColorHint="@color/skyBlue">
 
         <EditText
             android:id="@+id/editText_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:ems="10"
             android:hint="Password"
             android:text="123456"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,15 +88,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:focusable="true"
-        android:textColorHint="#ff8080">
+        android:textColorHint="@color/skyBlue">
 
         <EditText
             android:id="@+id/editText_name"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="User Name"
             android:text="akg"
+            android:textColor="@android:color/black"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -105,6 +113,7 @@
         android:background="@drawable/rounded_butonn"
 
         android:text="Login"
+
         android:textSize="20sp" />
 
     <LinearLayout
@@ -116,21 +125,23 @@
             android:id="@+id/already"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_marginLeft="80dp"
             android:layout_marginTop="22dp"
             android:text="New user?"
+            android:textColor="#2672EA"
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/signup_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="22dp"
-            android:id="@+id/signup_text"
 
+            android:onClick="signup_text"
             android:text="SignUp"
             android:textColor="#2672EA"
-            android:onClick="signup_text"
 
             android:textSize="24sp" />
     </LinearLayout>

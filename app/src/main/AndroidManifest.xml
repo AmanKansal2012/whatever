@@ -2,9 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.whatever">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.sensor.stepcounter" />
+    <uses-feature android:name="android.hardware.sensor.stepdetector" />
 
     <application
         android:allowBackup="true"
@@ -13,14 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Voice"></activity>
+        <activity android:name=".typeapp"></activity>
+        <activity android:name=".Emergencyap" />
+        <activity android:name=".stepsplash" />
+        <activity android:name=".ambulance" />
+        <activity android:name=".hospital" />
+        <activity android:name=".step" />
+        <activity android:name=".bmi" />
+        <activity android:name=".Voice" />
         <activity android:name=".start" />
         <activity android:name=".reports" />
         <activity android:name=".machines" />
         <activity android:name=".facilities" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Profile6" />
-        <activity android:name=".Profile5" />
         <activity android:name=".Profile4" />
         <activity android:name=".Profile3" />
         <activity android:name=".Profile2" />
@@ -37,8 +46,6 @@
         <activity android:name=".CT" />
         <activity android:name=".doctorProfileopen" />
         <activity android:name=".dp" />
-        <activity android:name=".paymentSuccessful" />
-        <activity android:name=".payappoint" />
         <activity android:name=".Pay" />
         <activity android:name=".dashboard" />
         <activity android:name=".login" />

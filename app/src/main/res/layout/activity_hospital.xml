@@ -1,0 +1,333 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradall">
+
+<RelativeLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".hospital">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hospitals"
+        android:textColor="@android:color/black"
+
+        android:textSize="30sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/doctor_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/card_main_bg"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/apollo"
+            android:transitionName="imageTransition" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:text="Kalyani Hospital"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/doctor_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="A Multispeciality Hospital"
+            android:textSize="20sp"
+            android:transitionName="descTransition" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/doctor_view1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/card_main_bg"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/lila"
+            android:transitionName="imageTransition" />
+
+        <TextView
+            android:id="@+id/txt_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:text="Apollo Hospital"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/doctor_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="A Multispeciality Hospital"
+            android:textSize="20sp"
+            android:transitionName="descTransition" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/doctor_view2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/card_main_bg"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sahara"
+            android:transitionName="imageTransition" />
+
+        <TextView
+            android:id="@+id/txt_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:text="CosmosHospital"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/doctor_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="A Multispeciality Hospital"
+            android:textSize="20sp"
+            android:transitionName="descTransition" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/doctor_view3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/card_main_bg"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gfg"
+            android:transitionName="imageTransition" />
+
+        <TextView
+            android:id="@+id/txt_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:text="VedantaHospital"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/doctor_desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="A Multispeciality Hospital"
+            android:textSize="20sp"
+            android:transitionName="descTransition" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/doctor_view4"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="657dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/card_main_bg"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/apollo"
+            android:transitionName="imageTransition" />
+
+        <TextView
+            android:id="@+id/txt_name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:text="MGMT Hospital"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/doctor_desc4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="A Multispeciality Hospital"
+            android:textSize="20sp"
+            android:transitionName="descTransition" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/doctor_view5"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="807dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/card_main_bg"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sahara"
+            android:transitionName="imageTransition" />
+
+        <TextView
+            android:id="@+id/txt_name5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:text="SKS Hospital"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/doctor_desc5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="A Multispeciality Hospital"
+            android:textSize="20sp"
+            android:transitionName="descTransition" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>

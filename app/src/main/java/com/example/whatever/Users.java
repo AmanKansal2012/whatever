@@ -1,38 +1,29 @@
 package com.example.whatever;
 
 public class Users {
-    String name,status,image;
+    String Domain,Name;
+
+    public String getDomain() {
+        return Domain;
+    }
+
+    public void setDomain(String domain) {
+        Domain = domain;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
 
     public Users() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public Users(String name, String status, String image) {
-        this.name = name;
-        this.status = status;
-        this.image = image;
+    public Users(String domain, String name) {
+        Domain = domain;
+        Name = name;
     }
 }

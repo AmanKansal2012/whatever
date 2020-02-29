@@ -25,7 +25,7 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentTop="true"
-            android:background="@drawable/mine"
+            android:background="@drawable/user"
             android:transitionName="imageTransition" />
 
         <TextView

@@ -1,5 +1,16 @@
 <resources>
-    <string name="app_name">Appointx</string>
+    <string name="app_name">HealthO</string>
     <string name="title_activity_my_voice">MyVoice</string>
     <string name="title_activity_voice">Voice</string>
+    <string name="weight">Weight (in kg)</string>
+    <string name="height">Height (in cm)</string>
+    <string name="calculateBMI">Calculate BMI</string>
+    <string name="very_severely_underweight">Very severly obsessed</string>
+    <string name="severely_underweight">Severely obsessed</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Overweight</string>
+    <string name="obese_class_i">Obese class 1</string>
+    <string name="obese_class_ii">Obese class 2</string>
+    <string name="obese_class_iii">Obese class 3</string>
 </resources>

@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class dashboard extends AppCompatActivity {
     ImageView appointimage;
     ImageView stethoscope;
@@ -26,7 +28,7 @@ public class dashboard extends AppCompatActivity {
     }
 
     public void appointment_dash(View view) {
-        Intent intent=new Intent(dashboard.this,dp.class);
+        Intent intent=new Intent(dashboard.this,typeapp.class);
 
         startActivity(intent);
 
@@ -63,6 +65,32 @@ public class dashboard extends AppCompatActivity {
 
     public void report(View view) {
         Intent rintent=new Intent(dashboard.this,reports.class);
+        startActivity(rintent);
+    }
+
+    public void step(View view) {
+        Intent rintent=new Intent(dashboard.this,stepsplash.class);
+        startActivity(rintent);
+    }
+
+    public void bmi(View view) {
+        Intent rintent=new Intent(dashboard.this,bmi.class);
+        startActivity(rintent);
+    }
+
+    public void hospital(View view) {
+        Intent rintent=new Intent(dashboard.this,hospital.class);
+        startActivity(rintent);
+    }
+
+    public void sos(View view) {
+        Intent rintent=new Intent(dashboard.this,ambulance.class);
+        startActivity(rintent);
+    }
+
+    public void logout(View view) {
+        FirebaseAuth.getInstance().signOut();
+        Intent rintent=new Intent(dashboard.this,register.class);
         startActivity(rintent);
     }
 }

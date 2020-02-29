@@ -131,39 +131,9 @@ public class AboutD extends AppCompatActivity {
         });
 
 
-        mlayout4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AboutD.this, Profile5.class);
-                Pair[] pairs = new Pair[3];
-                pairs[0] = new Pair<View, String>(getDoctor_image4, "imageTransition");
-                pairs[1] = new Pair<View, String>(mtextview4, "nameTransition");
-                pairs[2] = new Pair<View, String>(ntextview4, "descTransition");
 
 
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(AboutD.this, pairs);
 
-
-                startActivity(intent, options.toBundle());
-            }
-        });
-
-        mlayout5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AboutD.this, Profile6.class);
-                Pair[] pairs = new Pair[3];
-                pairs[0] = new Pair<View, String>(getDoctor_image5, "imageTransition");
-                pairs[1] = new Pair<View, String>(mtextview5, "nameTransition");
-                pairs[2] = new Pair<View, String>(ntextview5, "descTransition");
-
-
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(AboutD.this, pairs);
-
-
-                startActivity(intent, options.toBundle());
-            }
-        });
 
 
     }

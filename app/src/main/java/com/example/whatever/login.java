@@ -94,5 +94,12 @@ public class login extends AppCompatActivity {
                 });
 
 
-    }}
+    }
+
+    public void signup_text(View view) {
+        Intent intent=new Intent(login.this,register.class);
+        startActivity(intent);
+        finish();
+    }
+}
 

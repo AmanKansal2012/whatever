@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ambulance"
+    android:background="@drawable/gradall">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Emergency Helplines:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0A0A0A"
+        android:textSize="35dp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/siren"
+        android:layout_width="50dp"
+        android:layout_height="85dp"
+        android:background="@drawable/siren"></ImageView>
+
+        <TableLayout
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:background="#97b7d8"
+                    android:onClick="ambulance"
+                    android:text="AMBULANCE"
+                    android:textStyle="bold"></Button>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:background="#4177a1"
+                    android:onClick="med"
+                    android:text="Medical Helpline"
+                    android:textStyle="bold"></Button>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:background="#fecd7d"
+                    android:onClick="road"
+                    android:text="Road Accident"
+                    android:textStyle="bold"></Button>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:background="#b97637"
+                    android:onClick="aiims"
+                    android:text="AIIMS"
+                    android:textStyle="bold"></Button>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>

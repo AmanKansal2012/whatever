@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/whitee"
 
-    android:background="@android:color/white"
+
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
     tools:context=".register">
@@ -24,21 +26,22 @@
         android:layout_alignParentLeft="true"
 
 
-        android:textColor="@android:color/black"
+        android:textColor="#2672EA"
 
         android:textSize="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Account"
-        android:textStyle="italic"
-        android:typeface="sans"
-        android:textSize="32sp"
         android:layout_below="@+id/Sign_up"
         android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:textColor="#5D9EEA"/>
+        android:text="Account"
+        android:textColor="#2672EA"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        android:typeface="sans" />
 
 
 
@@ -53,7 +56,7 @@
         android:focusable="true"
         android:layout_marginTop="80dp"
 
-        android:textColorHint="@android:color/black">
+        android:textColorHint="@color/skyBlue">
 
         <EditText
             android:layout_width="match_parent"
@@ -62,6 +65,7 @@
             android:id="@+id/editText_email"
             android:ems="10"
             android:textSize="20sp"
+            android:textColor="@android:color/black"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -69,7 +73,7 @@
         android:layout_height="wrap_content"
         android:focusable="true"
         android:layout_marginTop="25dp"
-        android:textColorHint="@android:color/black">
+        android:textColorHint="@color/skyBlue">
 
         <EditText
             android:layout_width="match_parent"
@@ -78,6 +82,7 @@
             android:id="@+id/editText_password"
             android:ems="10"
             android:textSize="20sp"
+            android:textColor="@android:color/black"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -85,7 +90,7 @@
         android:layout_height="wrap_content"
         android:focusable="true"
         android:layout_marginTop="25dp"
-        android:textColorHint="@android:color/black">
+        android:textColorHint="@color/skyBlue">
 
         <EditText
             android:layout_width="match_parent"
@@ -96,6 +101,7 @@
             android:textSize="20sp"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/button_register"
@@ -118,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already a user?"
+            android:textColor="#2672EA"
             android:layout_marginTop="22dp"
             android:layout_marginLeft="60dp"
             android:id="@+id/already"
@@ -135,6 +142,8 @@
 
             android:layout_marginLeft="10dp"/>
     </LinearLayout>
+
+
 
 
 </LinearLayout>

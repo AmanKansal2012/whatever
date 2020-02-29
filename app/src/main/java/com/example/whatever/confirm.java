@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class confirm extends AppCompatActivity {
-     EditText drname;
-     EditText yourname;
+     EditText pname;
+     EditText pid;
      Button Confirm;
 
     @Override
@@ -19,22 +18,24 @@ public class confirm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm);
 
-        drname=(EditText) findViewById(R.id.drname);
-            yourname=(EditText) findViewById(R.id.yourname);
+        pname=(EditText) findViewById(R.id.pname);
+            pid=(EditText) findViewById(R.id.pid);
             Confirm=(Button) findViewById(R.id.Confirm);
             Confirm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String dN=drname.getText().toString();
-                    String pN=yourname.getText().toString();
+                    String dN=pname.getText().toString();
+                    String pN=pid.getText().toString();
                    Intent intent=new Intent(confirm.this,showappoint.class);
-                  intent.putExtra("Doctor :",dN);
-                  intent.putExtra("Patient:",pN);
+                  intent.putExtra("Patient :",dN);
+                  intent.putExtra("PayID :",pN);
                   startActivity(intent);
                 }
             });
 
     }
+
+
 }
 
 

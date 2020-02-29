@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -78,11 +79,15 @@ public class register extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
+                                    FirebaseUser currentuser=FirebaseAuth.getInstance().getCurrentUser();
+                                    assert currentuser != null;
+                                    String uid = currentuser.getUid();
+
                                     user information = new user(
-                                            Username, email
+                                            Username, email,uid
 
                                     );
-                                    FirebaseDatabase.getInstance().getReference("Users")
+                                    FirebaseDatabase.getInstance().getReference("PatientsRegister")
                                             .child(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid())
                                             .setValue(information).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
@@ -116,6 +121,8 @@ public class register extends AppCompatActivity {
 
 
     public void login_text(View view) {
-        startActivity(new Intent(getApplicationContext(), login.class));
+       Intent intent=new Intent(register.this,login.class);
+       startActivity(intent);
+       finish();
     }
 }

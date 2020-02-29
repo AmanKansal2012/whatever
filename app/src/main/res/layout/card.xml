@@ -24,7 +24,7 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentTop="true"
-            android:background="@drawable/mine"
+            android:background="@drawable/doc"
             android:transitionName="imageTransition" />
 
         <TextView
@@ -50,7 +50,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="120dp"
             android:layout_marginTop="50dp"
-            android:text="An Android Developer"
+            android:text="A Physician."
             android:textSize="20sp"
             android:transitionName="descTransition" />
 

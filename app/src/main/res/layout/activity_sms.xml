@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:layout_height="match_parent"
+    android:background="@drawable/gradall"
     tools:context=".sms">
 
     <EditText
@@ -36,7 +37,7 @@
         android:layout_height="300dp"
         android:layout_marginTop="10dp"
         android:gravity="top"
-        android:hint="For Queries regarding your appointment and health related issues. or if you have any suggestion you can contct us by writing mentioning your e-mail address.Our HR team will contact you soon with your query through mail or phone call."
+        android:hint="If you have any further queries, please do not hesitate to contact us.Just mention your email address and click on a send button."
         android:textSize="22sp" />
 
     <Button
@@ -45,7 +46,8 @@
         android:layout_marginTop="10dp"
         android:onClick="btn_send"
         android:text="Send Message"
-        android:textColor="#3F51B5"
+        android:background="@drawable/rounded_butonn"
+        android:textColor="#ffffff"
         android:textSize="25sp" />
 
 

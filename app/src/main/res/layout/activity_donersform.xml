@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".donersform">
+    tools:context=".donersform"
+    android:background="@drawable/gradall">
 
 
     <EditText
@@ -44,6 +45,7 @@
         android:text="Confirm"
         android:id="@+id/button"
         android:textColor="@android:color/black"
+        android:background="@drawable/rounded_butonn"
         android:onClick="newdoner"
         android:layout_marginLeft="95dp"/>
 
