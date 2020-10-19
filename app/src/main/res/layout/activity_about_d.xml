@@ -16,10 +16,10 @@ android:background="@drawable/gradall">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Contributors"
+        android:text="Developers"
         android:textColor="@android:color/black"
 
-        android:textSize="30sp" />
+        android:textSize="28sp" />
 
 
     <RelativeLayout
@@ -35,7 +35,7 @@ android:background="@drawable/gradall">
         android:background="@drawable/card_main_bg"
         android:elevation="5dp"
 
-        android:padding="10dp">
+        android:padding="8dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/doctor_image"
@@ -82,7 +82,7 @@ android:background="@drawable/gradall">
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="207dp"
+        android:layout_marginTop="200dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/card_main_bg"
         android:elevation="5dp"
@@ -138,7 +138,7 @@ android:background="@drawable/gradall">
         android:layout_marginRight="15dp"
         android:background="@drawable/card_main_bg"
         android:elevation="5dp"
-        android:padding="10dp">
+        android:padding="11dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/doctor_image2"
